@@ -5,9 +5,19 @@
     box-sizing: border-box;
 }
 
+/* Prevent horizontal scrolling */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* Custom Fonts */
 body {
     font-family: 'Helvetica', Arial, sans-serif;
+    background-image: url("bg-image.jpeg");
+    background-size: contain;
+    color: #333;
+    line-height: 1.6;
 }
 
 h1 {
@@ -17,28 +27,20 @@ h1 {
 
 h2 {
     font-family: 'Georgia', serif;
-    text-align: center; /* Center the heading */
+    text-align: center;
 }
 
 h3 {
     font-family: 'Arial', sans-serif;
-    text-align: center; /* Center the heading */
+    text-align: center;
 }
 
 p {
     font-family: 'Verdana', sans-serif;
-    text-align: center; /* Center the paragraphs */
+    text-align: center;
 }
 
-/* Global Styles */
-body {
-    background-image: url("bg-image.jpeg");
-    background-size: contain;
-    color: #333;
-    line-height: 1.6;
-}
-
-#offer { 
+#offer {
     color: azure;
 }
 
@@ -60,7 +62,6 @@ header {
     border-top-right-radius: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
-    /* overflow:hidden; */
 }
 
 header:before {
@@ -100,7 +101,7 @@ nav ul {
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: row; /* Change this line */
+    flex-direction: row;
 }
 
 nav ul li {
@@ -168,20 +169,20 @@ footer {
 }
 
 .footer-content {
-       color: aliceblue;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.footer-content a{
+.footer-content a {
     color: aquamarine;
-
 }
-.footer-content a:hover{
-     color: lightgreen;
-   }
+
+.footer-content a:hover {
+    color: lightgreen;
+}
 
 .footer-content .logo img {
     max-width: 100px;
@@ -229,7 +230,7 @@ img {
     border-radius: 50%;
     transition: transform 0.3s ease;
     display: block;
-    margin: 0 auto; /* Center the images */
+    margin: 0 auto;
 }
 
 img:hover {
@@ -266,13 +267,14 @@ h2, h3 {
         color: #333;
     }
 }
+
 .footer-links ul {
     display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: space-between; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-.footer-links li {
-    margin: 0 .7em;
-}   
 
+.footer-links li {
+    margin: 0 0.7em;
+}
